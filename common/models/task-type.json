@@ -1,0 +1,39 @@
+{
+  "name": "TaskType",
+  "plural": "TaskTypes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "userOwner": {
+      "type": "string"
+    },
+    "roleOwner": {
+      "type": "string"
+    },
+    "strategy": {
+      "type": "string"
+    },
+    "completeUrl": {
+      "type": "string"
+    },
+    "completeOperationName": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "humanTasks": {
+      "type": "hasMany",
+      "model": "HumanTask",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

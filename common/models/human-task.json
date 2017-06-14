@@ -1,0 +1,36 @@
+{
+  "name": "HumanTask",
+  "plural": "HumanTasks",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "parentId": {
+      "type": "string"
+    },
+    "workflowId": {
+      "type": "string"
+    },
+    "userOwner": {
+      "type": "string"
+    },
+    "completedBy": {
+      "type": "string"
+    },
+    "payload": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "taskType": {
+      "type": "belongsTo",
+      "model": "TaskType",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

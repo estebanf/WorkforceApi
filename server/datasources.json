@@ -1,0 +1,12 @@
+{
+  "mongo": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "mongodb://localhost:27017/workforce",
+    "database": "workforce",
+    "password": "",
+    "name": "mongo",
+    "user": "",
+    "connector": "mongodb"
+  }
+}
