@@ -24,6 +24,9 @@
     },
     "completeOperationName": {
       "type": "string"
+    },
+    "completeOperationNamespace":{
+      "type": "string"
     }
   },
   "validations": [],

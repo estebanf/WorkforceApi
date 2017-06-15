@@ -13,6 +13,9 @@
     "workflowId": {
       "type": "string"
     },
+    "processInstanceId":{
+      "type":"string"
+    },
     "userOwner": {
       "type": "string"
     },
