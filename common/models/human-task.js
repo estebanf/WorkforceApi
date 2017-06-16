@@ -17,7 +17,6 @@ module.exports = function(Humantask) {
               "dat":"http:\/\/workforce.everteam.com\/Datatypes"
             },
             "dat:parentId":{"$":savedObj.parentId},
-            // "dat:processInstanceId":{"$":savedObj.x},
             "dat:taskId":{"$":savedObj.id},
             "dat:humanTaskId":{"$":savedObj.workflowId},
             "dat:completedBy":{"$":savedObj.completedBy}
@@ -25,7 +24,6 @@ module.exports = function(Humantask) {
         }
         Object.defineProperty(post_data,keyName,Object.getOwnPropertyDescriptor(post_data,"proc"));
         delete post_data["proc"];
-        console.log(post_data);
         var post_options = {
           headers: {
             'Content-Type':'application/json/badgerfish'
@@ -39,6 +37,7 @@ module.exports = function(Humantask) {
             console.error(err);
             throw err;
           }
+          console.log(body);
           cb(null,savedObj);
         })
       })
